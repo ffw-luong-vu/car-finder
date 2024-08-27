@@ -1,11 +1,12 @@
+import logo from '@/assets/icons/logo.svg';
 import Image from "next/image";
 import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="inline-block w-32">
+    <Link href="/">
       <Image
-        src="/images/logo.svg"
+        src={logo.src}
         width={148}
         height={44}
         alt={"Car Finder Logo"}

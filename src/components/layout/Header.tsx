@@ -1,6 +1,8 @@
+import searchNormal from '@/assets/icons/search-normal.svg';
 import Logo from "@/components/layout/Logo";
 import Image from "next/image";
 import Link from "next/link";
+
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +13,7 @@ const Header: React.FC = () => {
       <div className="relative mb-3 md:mb-0">
         <div className="absolute inset-y-0 start-0 flex items-center ps-6 pointer-events-none md:ps-5">
           <Image
-            src="/images/search-normal.svg"
+            src={searchNormal.src}
             alt="search for your car"
             width={24}
             height={24}
