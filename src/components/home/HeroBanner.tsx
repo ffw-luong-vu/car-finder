@@ -37,7 +37,7 @@ const HeroBanner = () => {
         alt="home hero decorate"
         width={750}
         height={400}
-        className="hidden md:block absolute bottom-0 left-0"
+        className="hidden md:block absolute bottom-0 left-0 "
       />
     </div>
   );
