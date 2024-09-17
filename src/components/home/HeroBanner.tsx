@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HeroBanner = () => {
   return (
-    <div className="hero-banner relative bg-sonic-silver pt-10 pb-5 px-5 flex flex-col items-center gap-8 text-white md:flex-row md:justify-between md:items-start lg:pt-20 md:pl-20 md:pr-0 md:pb-8">
+    <div className="hero-banner relative bg-sonic-silver pt-10 pb-5 px-5 flex flex-col items-center gap-8 text-white md:flex-row md:justify-between md:items-start lg:pt-20 md:pl-20 md:pr-0 md:pb-8 mb-14 md:mb-8">
       <div className="">
         <h1 className="font-semibold mb-3 md:mb-4 md:text-4xl md:leading-normal">
           The Best Platform for Car Rental
@@ -16,7 +16,7 @@ const HeroBanner = () => {
             price.
           </p>
         </div>
-        <button className="hidden md:block md:py-4 px-9 z-20 relative">
+        <button className="btn-primary hidden md:block md:py-4 px-9 z-20 relative">
           Rent now
         </button>
       </div>
@@ -29,9 +29,7 @@ const HeroBanner = () => {
           priority
         />
       </div>
-      <div className="md:hidden">
-        <button>Rent now</button>
-      </div>
+      <button className="btn-primary md:hidden">Rent now</button>
       <Image
         src={homeHeroDecorate.src}
         alt="home hero decorate"

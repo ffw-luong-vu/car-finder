@@ -17,6 +17,7 @@ const config: Config = {
         "carmine-pink": "#ED3F3F",
         "sonic-silver": "#787878",
         "chinese-black": "#131313",
+        "philip-silver": "#b4b4b4",
         cultured: "#F6F7F9",
       },
     },

@@ -1,5 +1,11 @@
+import CarDetail from "@/components/cars/CarDetail";
+
 const DetailPage = () => {
-  return <div>DetailPage</div>;
+  return (
+    <>
+      <CarDetail />
+    </>
+  );
 };
 
 export default DetailPage;

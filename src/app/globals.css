@@ -7,7 +7,19 @@
     @apply bg-cultured text-pewter-blue mx-auto max-w-[1440px];
   }
 
-  button {
-    @apply bg-royal-blue font-semibold px-4 py-2.5 rounded text-xs leading-[14.4px] hover:bg-blue-400 md:px-5 md:text-base;
+  .btn-primary {
+    @apply bg-royal-blue text-white font-semibold px-4 py-2.5 rounded text-xs leading-[14.4px] hover:bg-blue-400 md:px-5 md:text-base;
+  }
+}
+
+@layer utilities {
+  .btn-like {
+    @apply w-6 h-6 block;
+    background-image: url("../assets/icons/heart-grey.svg");
+
+    &.btn-liked {
+      @apply bg-red-500;
+      background-image: url("../assets/icons/heart-red.svg");
+    }
   }
 }
