@@ -30,7 +30,10 @@ const CarDetail = () => {
             {car.title}
           </h1>
           <p className="text-white text-[28px] font-bold md:text-right">
-            <span className="text-[32px]">${car.price_per_day}</span> / day
+            <span className="text-[32px]">
+              ${car.discounted_price_per_day || car.price_per_day}
+            </span>{" "}
+            / day
           </p>
         </div>
         <div className="mb-3 md:mb-0 flex items-center justify-center">

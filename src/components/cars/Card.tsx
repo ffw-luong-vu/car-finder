@@ -72,9 +72,14 @@ const Card: React.FC<{ car: Car }> = ({ car }) => {
       <div className="flex justify-between items-center">
         <p>
           <span className="font-bold text-dark-gunmetal text-xl">
-            ${car.discounted_price_per_day}/
+            ${car.discounted_price_per_day || car.price_per_day}/
           </span>
           day
+          {car.discounted_price_per_day && (
+            <span className="block line-through text-sm font-bold mt1">
+              ${car.price_per_day}
+            </span>
+          )}
         </p>
         <Link href={`/cars/${car.id}`} className="btn-primary">
           Rent now
